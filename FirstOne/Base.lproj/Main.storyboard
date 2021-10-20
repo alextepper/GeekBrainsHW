@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="FirstOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-lf-lAA">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s38-g0-YXf">
+                                        <rect key="frame" x="32.666666666666657" y="30" width="324.66666666666674" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome to GeekBrains" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-96-viO">
+                                                <rect key="frame" x="0.0" y="0.0" width="324.66666666666669" height="37"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="4bN-2V-yJW">
+                                        <rect key="frame" x="30" y="306.66666666666669" width="330" height="153"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-dq-tH9">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D6J-DF-T3u">
+                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="tJ3-KP-j6c"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XQU-l4-AqP">
+                                                <rect key="frame" x="0.0" y="103" width="330" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-Y7-H3s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="8c2-Xx-kIt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jgI-to-01v">
+                                        <rect key="frame" x="100" y="686" width="190" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="Rkv-h3-wQN">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                                                <color key="tintColor" red="0.0" green="0.66500885953608246" blue="0.22382456894858688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="login">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <color key="baseBackgroundColor" red="0.0" green="0.25364449100000003" blue="0.085370094019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4cw-Mb-p6x"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="4bN-2V-yJW" secondAttribute="trailing" constant="30" id="0cx-zR-tKU"/>
+                                    <constraint firstItem="jgI-to-01v" firstAttribute="leading" secondItem="pKg-hM-aVH" secondAttribute="leading" constant="100" id="1WV-62-e3Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="jgI-to-01v" secondAttribute="bottom" constant="30" id="26F-Ms-t4o"/>
+                                    <constraint firstItem="s38-g0-YXf" firstAttribute="centerX" secondItem="FJm-lf-lAA" secondAttribute="centerX" id="3U4-9Z-pZv"/>
+                                    <constraint firstItem="4bN-2V-yJW" firstAttribute="centerY" secondItem="FJm-lf-lAA" secondAttribute="centerY" id="8gh-jB-v6f"/>
+                                    <constraint firstItem="s38-g0-YXf" firstAttribute="top" secondItem="pKg-hM-aVH" secondAttribute="top" constant="30" id="CvM-SB-o0S"/>
+                                    <constraint firstItem="4bN-2V-yJW" firstAttribute="centerX" secondItem="FJm-lf-lAA" secondAttribute="centerX" id="GeX-V7-mCD"/>
+                                    <constraint firstItem="pKg-hM-aVH" firstAttribute="bottom" secondItem="jgI-to-01v" secondAttribute="bottom" constant="30" id="LtM-hn-dZB"/>
+                                    <constraint firstItem="4bN-2V-yJW" firstAttribute="leading" secondItem="pKg-hM-aVH" secondAttribute="leading" constant="30" id="ZDX-Sl-bJr"/>
+                                    <constraint firstItem="jgI-to-01v" firstAttribute="centerX" secondItem="FJm-lf-lAA" secondAttribute="centerX" id="kUB-O0-sug"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="XLz-aN-em6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pKg-hM-aVH"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.08571601159793818" blue="0.02884976504115223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.75694668170000001" blue="0.25476843249999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJm-lf-lAA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Mj-ow-MM5"/>
+                            <constraint firstItem="FJm-lf-lAA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Yov-3h-raq"/>
+                            <constraint firstItem="FJm-lf-lAA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fcy-qt-O38"/>
+                            <constraint firstItem="FJm-lf-lAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gSN-QM-CAe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="i7R-Ea-0GV"/>
+            </objects>
+            <point key="canvasLocation" x="129.23076923076923" y="108.05687203791469"/>
+        </scene>
+    </scenes>
+</document>
