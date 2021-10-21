@@ -71,6 +71,9 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <color key="baseBackgroundColor" red="0.0" green="0.25364449100000003" blue="0.085370094019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PA3-kl-NKm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -105,6 +108,11 @@
                             <constraint firstItem="FJm-lf-lAA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gSN-QM-CAe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Rkv-h3-wQN" id="3oo-Ma-WDR"/>
+                        <outlet property="passwordTextField" destination="EUg-Y7-H3s" id="t3t-Ai-ryo"/>
+                        <outlet property="usernameTextField" destination="D6J-DF-T3u" id="HKJ-Tc-nUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="i7R-Ea-0GV"/>
